@@ -16,7 +16,7 @@ Cleaning Processes: Detail the step-by-step process of data cleaning (Documentat
 # Snippets of Code to clean Data 
 
 The first step is removing duplicates from the data. 
-'''
+```
 -- Step 1: Removing Duplicates
 DELETE FROM raw_data
 WHERE id IN (
@@ -27,7 +27,7 @@ WHERE id IN (
     ) AS duplicates
     WHERE duplicates.row_num > 1
 );
-'''
+```
 
 -- Step 2: Handling Missing Values
 UPDATE raw_data
